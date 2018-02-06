@@ -2,6 +2,7 @@
 # Lab 1 - *tumblrFeed*
 
 **tumblrFeed** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+Creating an Tumblr client, leveraging the power of table views and making a network request to the Tumblr API in order to create a feed of popular photos.
 
 Time spent: **X** hours spent in total
 
