@@ -15,12 +15,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
-        cell.textLabel?.text = "This is row \(indexPath.row)"
+        
         
         let post = posts[indexPath.row]
         if let photos = post["photos"] as? [[String: Any]] {
@@ -32,6 +32,8 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let urlString = originalSize["url"] as! String
             // 4.
             let url = URL(string: urlString)
+            cell.FliximageView.af_setImage(withURL: url!)
+            
         }
         return cell
     }
@@ -39,7 +41,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
+        self.tableView.rowHeight = 300
         // Network request snippet
         let url = URL(string: "https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")!
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -55,9 +57,11 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let responseDictionary = dataDictionary["response"] as! [String: Any]
             // Store the returned array of dictionaries in our posts property
             self.posts = responseDictionary["posts"] as! [[String: Any]]
+            self.tableView.reloadData()
             }
         }
         task.resume()
+        
 
         // Do any additional setup after loading the view.
     }
