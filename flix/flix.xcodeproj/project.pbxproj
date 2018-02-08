@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596894FC202C09E700271F7F /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596894FB202C09E700271F7F /* PhotoDetailsViewController.swift */; };
 		59D8801A20293634005FAED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8801920293634005FAED0 /* AppDelegate.swift */; };
 		59D8801F20293634005FAED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D8801D20293634005FAED0 /* Main.storyboard */; };
 		59D8802120293634005FAED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D8802020293634005FAED0 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3FF9F6B3828C398E49FE7A94 /* Pods-flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flix/Pods-flix.debug.xcconfig"; sourceTree = "<group>"; };
+		596894FB202C09E700271F7F /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		59D8801620293634005FAED0 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D8801920293634005FAED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D8801E20293634005FAED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				59D88049202949A8005FAED0 /* View Controllers */,
 				59D8801920293634005FAED0 /* AppDelegate.swift */,
 				59D8801D20293634005FAED0 /* Main.storyboard */,
+				596894FB202C09E700271F7F /* PhotoDetailsViewController.swift */,
 				59D8804E202A81D6005FAED0 /* PhotoCell.swift */,
 				59D8802020293634005FAED0 /* Assets.xcassets */,
 				59D8802220293634005FAED0 /* LaunchScreen.storyboard */,
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				596894FC202C09E700271F7F /* PhotoDetailsViewController.swift in Sources */,
 				59D8801A20293634005FAED0 /* AppDelegate.swift in Sources */,
 				59D8804F202A81D6005FAED0 /* PhotoCell.swift in Sources */,
 				59D8804D20294DE3005FAED0 /* PhotosViewController.swift in Sources */,
