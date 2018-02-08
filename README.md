@@ -14,10 +14,10 @@ The following **required** user stories are complete:
 
 The following **stretch** user stories are implemented:
 
-- [X] User sees an alert when there's a networking error (+1pt)
-- [X] While poster is being fetched, user see's a placeholder image (+1pt)
-- [X] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
-- [X] Customize the selection effect of the cell (+1pt)
+- [ ] User sees an alert when there's a networking error (+1pt)
+- [ ] While poster is being fetched, user see's a placeholder image (+1pt)
+- [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
+-  ] Customize the selection effect of the cell (+1pt)
 
 The following **additional** user stories are implemented:
 
@@ -57,13 +57,13 @@ limitations under the License.
 
 **Name of your app** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User can tab an image to view a larger image in a detail view (5pts)
+- [X] User can tab an image to view a larger image in a detail view (5pts)
 
 The following **stretch** user stories are implemented:
 
